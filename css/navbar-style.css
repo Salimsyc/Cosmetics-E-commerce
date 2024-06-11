@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body {
+    
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    
+    justify-content: center;
+    display: flex;
+    background-color: #000;
+}
+.navbar .brand-logo {
+    flex: 1;
+    flex-grow: 0;
+    justify-content: center;
+}
+.navbar .navbar-links {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-links li {
+    list-style: none;
+    padding: 10px 20px;
+}
+.navbar .navbar-links li a{
+
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.navbar .navbar-links li a:hover{
+    color: #5f5f5f;
+}
+.navbar .search-div {
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.navbar .search-div input {
+    background-color: rgb(245, 245, 245);
+    border: none;
+    width: 300px;
+    font-size: 12pt;
+}
+.navbar .search-div i {
+    color: #929292;
+}
+.navbar .navbar-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar .shop-list {
+    position: relative;
+}
+.navbar .shop-list:hover .shop-list-dropdown {
+    max-height: 200px;
+}
+.navbar .shop-list-dropdown {
+    display: block;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    top: 100%;
+    left: 0;
+    background-color: #0a0a0a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.navbar .shop-list-dropdown li {
+    margin: 0;
+}
+.navbar .shop-list-dropdown li a {
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none
+}
+
+
+/* ====================================================== */
+.navbar .shop-list-categories {
+    position: relative;
+}
+.navbar .shop-list-categories:hover .shop-list-categories-dropdown {
+    max-height: 500px;
+}
+.navbar .shop-list-categories-dropdown {
+    display: block;
+    position: absolute;
+    top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    left: 100%;
+    background-color: #0a0a0a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.navbar .shop-list-categories-dropdown li {
+    margin: 0;
+}
+.navbar .shop-list-categories-dropdown li a {
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none
+}
