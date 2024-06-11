@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./css/fontawesome-6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/navbar-style.css">
     <title>Marshal Beauty Shop</title>
-
-
+</head>
+<body>
     <nav class="navbar">
         <div class="brand-logo"><a href="index.html"><img src="./images/logo.png" alt="logo"></a></div>
         <ul class="navbar-links">
@@ -42,10 +42,26 @@
     </nav>
 
     <section class="main-page">
+        <div class="carousel-container">
 
+            <button type="button" class="previous-carousel-button" onclick="moveCarousel(-1)"><i class="fa fa-angle-left"></i></button>
+            <div class="text-carousel">
+                <div class="text">
+                    <p>Glow Up Essentials</p>
+                    <p>Get Glowing. Prime, Set, and Shine All Day.</p>
+                </div>
+                <div class="text">
+                    <p>Glow Up Essentials</p>
+                    <p>Get Glowing. Prime, Set, and Shine All Day.</p>
+                </div>
+            </div>
+            <button type="button" class="next-carousel-button" onclick="moveCarousel(1)"><i class="fa fa-angle-right"></i></button>
+        </div>
     </section>
-</head>
-<body>
-    
+
+
+
+    <!-------------------------Scripts Links ------------------------>
+    <script src="./js/controls.js"></script>
 </body>
 </html>

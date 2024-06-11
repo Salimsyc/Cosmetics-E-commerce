@@ -12,15 +12,15 @@ body {
 
 
 .navbar {
-    
-    justify-content: center;
     display: flex;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    height: 70px;
 }
 .navbar .brand-logo {
     flex: 1;
     flex-grow: 0;
-    justify-content: center;
+    margin-left: 20px;
 }
 .navbar .navbar-links {
     flex: 1;
@@ -52,7 +52,9 @@ body {
     border: none;
     width: 300px;
     font-size: 12pt;
+    outline: none;
 }
+
 .navbar .search-div i {
     color: #929292;
 }
@@ -64,17 +66,18 @@ body {
     position: relative;
 }
 .navbar .shop-list:hover .shop-list-dropdown {
-    max-height: 200px;
+    visibility: visible;
+    opacity: 1;
 }
 .navbar .shop-list-dropdown {
     display: block;
     position: absolute;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease;
     top: 100%;
     left: 0;
-    background-color: #0a0a0a;
+    background-color: rgba(0,0,0,0.5);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -91,22 +94,23 @@ body {
 }
 
 
-/* ====================================================== */
+
 .navbar .shop-list-categories {
     position: relative;
 }
 .navbar .shop-list-categories:hover .shop-list-categories-dropdown {
-    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
 }
 .navbar .shop-list-categories-dropdown {
     display: block;
     position: absolute;
     top: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease;
     left: 100%;
-    background-color: #0a0a0a;
+    background-color: rgba(0,0,0,0.5);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -121,3 +125,64 @@ body {
     color: white;
     text-decoration: none
 }
+
+
+/* ============================= Nav icons ============================ */
+
+.navbar-icons {
+    margin-right: 10px;
+}
+.navbar-icons li {
+    list-style: none;
+    margin: 0px 15px;
+}
+.navbar-icons li a {
+    color: white;
+    font-size: 13pt;
+}
+
+
+/* ============================= Text Carousel ============================ */
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .text-carousel {
+    display: flex;
+  }
+  
+  .text {
+    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .previous-carousel-button {
+    left: 10px;
+  }
+  
+  .next-carousel-button {
+    right: 10px;
+  }
+  
