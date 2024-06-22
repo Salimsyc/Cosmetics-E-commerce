@@ -5,60 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fontawesome-6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/navbar-style.css">
+    <link rel="stylesheet" href="./css/section-one-style.css">
+    <link rel="stylesheet" href="./css/section-two-style.css">
+    <link rel="stylesheet" href="./css/section-three-style.css">
+    <link rel="stylesheet" href="./css/section-four-style.css">
+    <link rel="stylesheet" href="./css/section-five-style.css">
+    
+
+
     <title>Marshal Beauty Shop</title>
 </head>
 <body>
-    <nav class="navbar">
+  
+  
+    <section class="main-page-section">
+      <nav class="navbar">
         <div class="brand-logo"><a href="index.html"><img src="./images/logo.png" alt="logo"></a></div>
         <ul class="navbar-links">
-            <li><a href="index.html">Home</a></li>
-            <li class="shop-list"><a href="index.html">Shop</a>
-                <ul class="shop-list-dropdown">
-                    <li class="shop-list-categories"><a href="#">Categories</a>
-                        <ul class=" shop-list-categories-dropdown">
-                            <li><a href="#">Skincare</a></li>
-                            <li><a href="#">Makeup</a></li>
-                            <li><a href="#">Haircare</a></li>
-                            <li><a href="#">Fragrances</a></li>
-                            <li><a href="#">Bath & Body</a></li>
-                            <li><a href="#">Tools & Accessories</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">New Arrivals</a></li>
-                </ul>
-            </li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-            <li>
-                <div class="search-div"><input type="text" name="search-input" id="search_input" placeholder="Enter any..." ><i class="fa fa-search"></i></div>
-            </li>
-        </ul>
-        <ul class="navbar-icons">
-            <li><i><a href="index.html" class="fa fa-user"></a></i></li>
-            <li><i><a href="index.html" class="fa fa-cart-shopping"></a></i></li>
-            <li><i><a href="index.html" class="fa fa-heart"></a></i></li>
-        </ul>
-    </nav>
-
-    <section class="main-page">
-        <div class="carousel-container">
-
-            <button type="button" class="previous-carousel-button" onclick="moveCarousel(-1)"><i class="fa fa-angle-left"></i></button>
-            <div class="text-carousel">
-                <div class="text">
-                    <p>Glow Up Essentials</p>
-                    <p>Get Glowing. Prime, Set, and Shine All Day.</p>
-                </div>
-                <div class="text">
-                    <p>Glow Up Essentials</p>
-                    <p>Get Glowing. Prime, Set, and Shine All Day.</p>
-                </div>
-            </div>
-            <button type="button" class="next-carousel-button" onclick="moveCarousel(1)"><i class="fa fa-angle-right"></i></button>
+          <li><a href="index.html">Home</a></li>
+                <li class="shop-list"><a href="index.html">Shop</a>
+                    <ul class="shop-list-dropdown">
+                        <li class="shop-list-categories"><a href="#">Categories</a>
+                            <ul class=" shop-list-categories-dropdown">
+                                <li><a href="#">Skincare</a></li>
+                                <li><a href="#">Makeup</a></li>
+                                <li><a href="#">Haircare</a></li>
+                                <li><a href="#">Fragrances</a></li>
+                                <li><a href="#">Bath & Body</a></li>
+                                <li><a href="#">Tools & Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li>
+                    <div class="search-div"><input type="text" name="search-input" id="search_input" placeholder="Enter any..." ><i class="fa fa-search"></i></div>
+                </li>
+            </ul>
+            <ul class="navbar-icons">
+                <li><i><a href="index.html" class="fa fa-user"></a></i></li>
+                <li><i><a href="index.html" class="fa fa-cart-shopping"></a></i></li>
+                <li><i><a href="index.html" class="fa fa-heart"></a></i></li>
+            </ul>
+        </nav>
+      <div class="carousel-text">
+        <div class="carousel-content active">
+          <h1>Welcome to Marshal Beauty</h1>
+          <p>My name is Maira and I have a restaurant in the city center.</p>
         </div>
+        <div class="carousel-content">
+          <h1>Amazing Products</h1>
+          <p>Check out our amazing products for your beauty needs.</p>
+        </div>
+        <div class="carousel-content">
+          <h1>Don't miss this!</h1>
+          <p>Get exclusive discounts on our latest collections.</p>
+        </div>
+        <button onclick="previousSlide()" class="previous-slide" type="button"><i class="fa fa-angle-left"></i></button>
+        <button type="button" onclick="nextSlide()" class="next-slide"><i class="fa fa-angle-right"></i></button>
+      </div>
+      <button class="show-now-button">Shop Now</button>
+
+    </section>
+    
+
+    <section class="featured-categories-section">
+      <h1 class="featured-categories-title">Featured Categories</h1>
+      <div class="categories-container">
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+        <div class="category-card">
+          <img src="./images/test/skincare.png" alt="Skincare">
+          <h1>Haircare</h1>
+        </div>
+
+      </div>
     </section>
 
+    <section class="new-arrivals-section">
+
+      <h1>New Arrivals</h1>
+      <div class="new-arrivals-container">
+
+        <div class="new-arrivals-item">
+          <div class="new-patch"><h3>New</h3></div>
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="">
+          <div class="new-arrivals-info">
+            <h2>Coconut Hair Oil</h2>
+            <div class="new-arrivals-rate">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+            </div>
+            <h1>$82</h1>
+          </div>
+        </div>
+
+        <div class="new-arrivals-item">
+          <div class="new-patch"><h3>New</h3></div>
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="">
+          <div class="new-arrivals-info">
+            <h2>Coconut Hair Oil</h2>
+            <div class="new-arrivals-rate">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+            </div>
+            <h1>$82</h1>
+          </div>
+        </div>
+
+        <div class="new-arrivals-item">
+          <div class="new-patch"><h3>New</h3></div>
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="">
+          <div class="new-arrivals-info">
+            <h2>Coconut Hair Oil</h2>
+            <div class="new-arrivals-rate">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+            </div>
+            <h1>$82</h1>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="customer-testimonials-section">
+      <h1 class="customer-testimonials-section-title">Customer Testimonials</h1>
+      <div class="testimonials-scroll-buttons">
+        <button class="fa fa-angle-right testimonials-rightbtn-scroll"></button>
+        <button class="fa fa-angle-left testimonials-leftbtn-scroll"></button>
+      </div>
+      <div class="customers-container">
+        <div class="customer">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="customer-card">
+              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <h2 class="customer-name">Salim Yusuf</h2>
+          <p class="customer-title">Marshal Tech CEO</p>
+        </div>
+        <div class="customer">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="customer-card">
+              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <h2 class="customer-name">Salim Yusuf</h2>
+          <p class="customer-title">Marshal Tech CEO</p>
+        </div>
+        <div class="customer">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="customer-card">
+              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <h2 class="customer-name">Salim Yusuf</h2>
+          <p class="customer-title">Marshal Tech CEO</p>
+        </div>
+        <div class="customer">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="customer-card">
+              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <h2 class="customer-name">Salim Yusuf</h2>
+          <p class="customer-title">Marshal Tech CEO</p>
+        </div>
+        <div class="customer">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="customer-card">
+              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <h2 class="customer-name">Salim Yusuf</h2>
+          <p class="customer-title">Marshal Tech CEO</p>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <section class="available-brands">
+      <div class="brand-section-scroll-buttons">
+        <button class="fa fa-angle-right"></button>
+        <button class="fa fa-angle-left"></button>
+      </div>
+        <div class="brand-product-logo">
+          <img src="./images/brands/1.png" alt="">
+        </div>      
+    </section>
+    <!--
+
+      <div class="test-div"></div>
+    -->
 
 
     <!-------------------------Scripts Links ------------------------>

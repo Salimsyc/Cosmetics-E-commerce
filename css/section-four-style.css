@@ -1,0 +1,123 @@
+.customer-testimonials-section {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #636363;
+}
+.customer-testimonials-section-title {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+.customers-container {
+    width: 90%;
+    top: 90px;
+    position: absolute;
+    display: flex;
+    overflow-x: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    scroll-behavior: smooth;
+}
+.customers-container::-webkit-scrollbar {
+    display: none;
+}
+.testimonials-scroll-buttons {
+    position: relative;
+    margin-top: 25%;
+
+}
+.testimonials-scroll-buttons .fa-angle-right {
+    font-size: 2.5em;
+    color: rgb(28, 28, 29);
+    right: 20px;
+}
+.testimonials-scroll-buttons .fa-angle-left {
+    font-size: 2.5em;
+    color: rgb(28, 28, 29);
+    left: 20px;
+}
+
+.customer {
+    height: 400px;
+    width: 300px;
+    min-width: 300px;
+    margin: 6% 1%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.customer .customer-image {
+    top: -80px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.customer-card p {
+    font-size: 1em;
+    color: rgb(173, 173, 173);
+    position: relative;
+    top: -60px;
+    margin: 0px 15px;
+    text-align: justify;
+    text-justify: auto;
+    line-height: 20pt;    
+}
+
+.customer-name, .customer-title {
+    position: relative;
+    top: -20px;
+}
+.customer-name {
+    margin-bottom: 5px;
+}
+
+.customer-note {
+    position: relative;
+}
+
+.customer-note::after, .customer-note::before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    color: #636363;
+    font-size: 1.1em;
+    top: 0px;
+    position: relative;
+}
+.customer-note::before {
+
+    content: '\f10d';
+    left: 0;
+    margin: 10px;
+}
+
+.customer-note::after {
+    content: '\f10e';
+    right: 0;
+
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
