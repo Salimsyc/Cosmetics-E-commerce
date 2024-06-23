@@ -10,7 +10,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: 
         "main-page-section",
-        "featured-categories-section"
+        "featured-categories-section",
+        "new-arrivals-section",
+        "customer-testimonials-section",
     ;   
 }
 
@@ -25,9 +27,11 @@ body {
 .navbar {
     display: flex;
     align-items: center;
+    height: 60px;
+    padding-right: 5%;
+    padding-left: 5%;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 30px;
     position: sticky;
     position: -webkit-sticky; /* For Safari */
     top: 0;
@@ -59,6 +63,7 @@ body {
     list-style: none;
 }
 .navbar-links li a {
+    padding-bottom: 5px;
     color: white;
     text-decoration: none;
     transition: 0.1s ease-in-out;
@@ -94,9 +99,9 @@ body {
     transition: all 0.5 ease-in-out;
     min-width: 100%;
     overflow: hidden;
-
+    
     max-width: 600px;
-   
+    
 }
 .carousel-content {
     display: none;
@@ -120,13 +125,13 @@ body {
     transform: translateY(50%);
     display: flex;
 }
-.fa-angle-left {
+.carousel-text-controllers .fa-angle-left {
     font-size: 24pt;
     color: white;
     left: 5%;
     position: absolute;
 }
-.fa-angle-right {
+.carousel-text-controllers .fa-angle-right {
     font-size: 24pt;
     color: white;
     position: absolute;
@@ -155,18 +160,225 @@ body {
     font-size: 12pt;
 }
 
-.shop-list-dropdown, .shop-list-categories-dropdown {
-    display: none;
+/*========================================================== Navbar =================================================*/
+
+
+.navbar .shop-list {
+    position: relative;
 }
-.shop-list-dropdown {
+.navbar .shop-list:hover .shop-list-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.navbar .shop-list-dropdown {
+    display: block;
     position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease;
+    top: 100%;
+    transform: translateY(20%);
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.navbar .shop-list-dropdown li {
+    margin: 10px;
+}
+.navbar .shop-list-dropdown li a {
+    color: white;
+    text-decoration: none
 }
 
-.shop-list-dropdown li {
-    margin: 10px;   
+
+
+.navbar .shop-list-categories {
+    position: relative;
 }
+.navbar .shop-list-categories:hover .shop-list-categories-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.navbar .shop-list-categories-dropdown {
+    display: block;
+    position: absolute;
+    top: -10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease;
+    left: 100%;
+    transform: translateX(4%);
+    background-color: rgba(0,0,0,0.5);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.navbar .shop-list-categories-dropdown li {
+    padding: 10px 10px;
+    margin: 0;
+}
+.navbar .shop-list-categories-dropdown li a {
+    color: white;
+    text-decoration: none
+}
+
+
+/*========================================================== FEATURED CATEGORIES =================================================*/
+.featured-categories-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between  ;
+}
+.featured-categories-title {
+    text-align: center;
+    margin: 50px;
+    font-size: 18pt;
+}
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.category-card {
+    width: 300px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    height: 350px;
+    filter: grayscale(0.6);
+    background-color: #C28181;
+    
+}
+
+.category-card img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.category-card:hover {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+.category-card h1 {
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+    position: relative;
+    top: 15px;
+}
+
+/*========================================================== NEW ARRIVALS =================================================*/
+
+.new-arrivals-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.new-arrivals-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-arrivals-leftbtn,
+.new-arrivals-rightbtn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.new-arrivals-leftbtn {
+    left: 10px;
+}
+
+.new-arrivals-rightbtn {
+    right: 10px;
+}
+
+.new-arrivals-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.new-arrivals-item {
+    width: 300px; /* Adjust the width of each item */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    height: 350px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.new-arrivals-item img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px; /* Ensure images have rounded corners */
+}
+
+.new-patch {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #0b6daf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 10pt;
+}
+
+.new-arrivals-info h2{
+    font-size: 12pt;
+    color: #C28181;
+}
+
+.new-arrivals-info h1{
+    font-size: 14pt;
+}
+
+.new-arrivals-rate {
+    color: #f8b739;
+    font-size: 12pt;
+    margin: 5px 0px;
+}
+
+.new-arrivals-rate i {
+    font-size: 12pt;
+}
+
+.purchase-new-arrival {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+
+
+
+
+
+
+
 
