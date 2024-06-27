@@ -81,29 +81,16 @@
       <h1 class="featured-categories-title">Featured Categories</h1>
       <div class="categories-container">
         <div class="category-card">
-          <img src="./images/test/skincare.png" alt="Skincare">
-          <h1>Haircare</h1>
-        </div>
-        <div class="category-card">
-          <img src="./images/test/Haircare.jpg" alt="Skincare">
-          <h1>Haircare</h1>
-        </div>
-        <div class="category-card">
-          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Skincare">
-          <h1>Make up</h1>
-        </div>
-        <div class="category-card">
-          <img src="./images/test/Haircare.jpg" alt="Skincare">
-          <h1>Skincare</h1>
-        </div>
-        <div class="category-card">
-          <img src="./images/test/skincare.png" alt="Skincare">
-          <h1>Skincare</h1>
-        </div>
-        <div class="category-card">
-          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Skincare">
-          <h1>Make up</h1>
-        </div>
+          <div class="image-container">
+              <img src="../images/test/skincare.png" alt="Category Image" class="category-image">
+          </div>
+          <div class="category-details">
+              <h2 class="category-title">Category Name</h2>
+              <p class="category-description">Explore a variety of products in this category.</p>
+              <a href="#" class="view-button">View Products</a>
+          </div>
+    </div>
+      
 
       </div>
     </section>
@@ -114,25 +101,19 @@
           <button class="new-arrivals-leftbtn fa fa-angle-left"></button>
           <div class="new-arrivals-container">
 
-              <div class="new-arrivals-item">
-                  <div class="new-patch"><h3>New</h3></div>
-                  <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="">
-                  
-                  <div class="new-arrivals-info">
-                      <h2>Coconut Hair Oil</h2>
-                      <div class="new-arrivals-rate">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star-half-alt"></i>
-                      </div>
-                      <h1>$82</h1>
-                  </div>
-                  <div class="purchase-new-arrival">
-                    <button class="fa fa-shopping-cart"></button>
-                  </div>
+            <div class="new-arrival-card">
+              <div class="new-arrival-card__badge">New Arrival</div>
+              <div class="new-arrival-card__image-container">
+                  <img src="../images/test/Haircare.jpg" alt="Product Image" class="new-arrival-card__image">
               </div>
+              <div class="new-arrival-card__details">
+                  <h2 class="new-arrival-card__title">Product Title</h2>
+                  <p class="new-arrival-card__description">This is a short description of the product.</p>
+                  <h1 class="new-arrival-card__price">$99.99</h1>
+                  <button class="new-arrival-card__cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+
+              </div>
+          </div>
               <!-- Add more new arrivals items as needed -->
           </div>
           <button class="new-arrivals-rightbtn fa fa-angle-right"></button>
@@ -141,52 +122,91 @@
   
 
     <section class="customer-testimonials-section">
-      <h1 class="customer-testimonials-section-title">Customer Testimonials</h1>
+      <h1 class="customer-testimonials-section-title">Testimonials</h1>
+      <p class="customer-testimonials-section-subtitle">What our Customers say</p>
       <div class="testimonials-scroll-buttons">
         <button class="fa fa-angle-right testimonials-rightbtn-scroll"></button>
         <button class="fa fa-angle-left testimonials-leftbtn-scroll"></button>
       </div>
-      <div class="customers-container">
-        <div class="customer">
+      <div class="customers-container-wrapper">
+      <div class="customers-container" id="customers-container">
+
+        <div class="customer-card">
           <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
-          <div class="customer-card">
-              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <h2 class="customer-name">Salim Yusuf</h2>
-          <p class="customer-title">Marshal Tech CEO</p>
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
         </div>
-        <div class="customer">
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
           <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
-          <div class="customer-card">
-              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <h2 class="customer-name">Salim Yusuf</h2>
-          <p class="customer-title">Marshal Tech CEO</p>
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
         </div>
-        <div class="customer">
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
           <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
-          <div class="customer-card">
-              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <h2 class="customer-name">Salim Yusuf</h2>
-          <p class="customer-title">Marshal Tech CEO</p>
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
         </div>
-        <div class="customer">
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
           <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
-          <div class="customer-card">
-              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <h2 class="customer-name">Salim Yusuf</h2>
-          <p class="customer-title">Marshal Tech CEO</p>
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
         </div>
-        <div class="customer">
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
           <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
-          <div class="customer-card">
-              <p class="customer-note">Simply dummy test of the printng and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <h2 class="customer-name">Salim Yusuf</h2>
-          <p class="customer-title">Marshal Tech CEO</p>
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
         </div>
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
+        </div>
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
+        </div>
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+        <div class="customer-card">
+          <img src="./images/test/variety-makeup-products-are-table_81048-7064.jpg" alt="Customer image" class="customer-image">
+          <div class="testimonial__text">
+            <i class="fas fa-quote-left testimonial__quote-start"></i>
+            I absolutely love the products from this store! The quality is top-notch, and the customer service is outstanding. I highly recommend it to everyone!
+            <i class="fas fa-quote-right testimonial__quote-end"></i>
+        </div>
+        <div class="testimonial__author">- Sarah M.</div>
+        </div>
+      
+
+      </div>
+        
         
 
       </div>
